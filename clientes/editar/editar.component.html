@@ -1,0 +1,64 @@
+<div class="container col-md-6">
+    <div class="row">
+        <div class="row-header">
+            <h3> Modificar Datos</h3>
+        </div>
+        <div class="card-body">
+            <form action="#" method="post"> 
+            <div class="form-group">
+                <label for="">Identificación</label>
+                <input type="number" [(ngModel)]="cliente.cus_nmcliente" name="cus_nmcliente" class="form-control">
+                <label for="">Nombres</label>
+                <input type="text" [(ngModel)]="cliente.cus_dsnombres" name="cus_dsnombres" class="form-control">
+                <label for="">Apellidos</label>
+                <input type="text" [(ngModel)]="cliente.cus_dsapellidos" name="cus_dsapellidos" class="form-control">
+                <label for="">Dirección</label>
+                <input type="text" [(ngModel)]="cliente.cus_dsdireccion" name="cus_dsdireccion" class="form-control">
+                <label for="">Correo</label>
+                <input type="email" [(ngModel)]="cliente.cus_dscorreo" name="cus_dscorreo" class="form-control">
+                <label for="">Télefono</label>
+                <input type="number" [(ngModel)]="cliente.cus_cdtelefono" name="cus_cdtelefono" class="form-control">
+                <label for="">Télefono Alterno</label>
+                <input type="number" [(ngModel)]="cliente.cus_cdtelefonoalter" name="cus_cdtelefonoalter" class="form-control">
+                <label for="">Celular</label>
+                <input type="number" [(ngModel)]="cliente.cus_cdcelular" name="cus_cdcelular" class="form-control">
+                <label for="">Número Cargo</label>
+                <input type="number" [(ngModel)]="cliente.cus_nmcargo" name="cus_nmcargo" class="form-control">
+                <label for="">Cargo</label>
+                <input type="text" [(ngModel)]="cliente.cus_dscargo" name="cus_dscargo" class="form-control">
+                <label for="">Número Ciudad</label>
+                <input type="number" [(ngModel)]="cliente.cus_nmciudad" name="cus_nmciudad" class="form-control">
+                <label for="">Ciudad</label>
+                <input type="text" [(ngModel)]="cliente.cus_dsciudad" name="cus_dsciudad" class="form-control">
+                <label for="">Fecha Nacimiento</label>
+                <input type="date" [(ngModel)]="cliente.cus_fenacimiento" name="cus_fenacimiento" class="form-control">
+                <label for="">Genero</label>
+                <input type="text" [(ngModel)]="cliente.cus_genero" name="cus_genero" class="form-control">
+                <label for="">Número Comunidad</label>
+                <input type="number" [(ngModel)]="cliente.cus_nmcomunidad" name="cus_nmcomunidad" class="form-control">
+                <label for="">Comunidad</label>
+                <input type="text" [(ngModel)]="cliente.cus_dscomunidad" name="cus_dscomunidad" class="form-control">
+                <label for="">Empresa Labora</label>
+                <input type="text" [(ngModel)]="cliente.cus_dsempresalabora" name="cus_dsempresalabora" class="form-control">
+                <label for="">Número División</label>
+                <input type="number" [(ngModel)]="cliente.cus_nmdivision" name="cus_nmdivision" class="form-control">
+                <label for="">División</label>
+                <input type="text" [(ngModel)]="cliente.cus_dsdivision" name="cus_dsdivision" class="form-control">
+                <label for="">Número Pais</label>
+                <input type="number" [(ngModel)]="cliente.cus_nmpais" name="cus_nmpais" class="form-control">
+                <label for="">Pais</label>
+                <input type="text" [(ngModel)]="cliente.cus_dspais" name="cus_dspais" class="form-control">
+                <label for="">Hobbies</label>
+                <input type="text" [(ngModel)]="cliente.cus_hobbies" name="cus_hobbies" class="form-control">
+                <label for="">Fecha Baja</label>
+                <input type="date" [(ngModel)]="cliente.cus_febaja" name="cus_febaja" class="form-control">
+            </div>
+            <button  (click)="Actualizar(cliente)"  class="btn btn-primary">Actualizar</button>
+
+            </form>
+
+        </div>
+        
+    </div>
+
+</div>
