@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="row-header">
+            <h3>Clientes</h3>
+        </div>
+        <div class="table-responsive table-striped">
+            <table class="table table-striped">
+                <thead>
+                    <tr class="text-center">
+                        <th style="visibility:hidden;">ID</th>
+                        <th>Documento</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Direccion</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Celular</th>
+                        <th>Cargo</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let cliente of Clientes" class="text-center">
+                        <td style="visibility:hidden;">{{cliente.nmid}}</td>
+                        <td>{{cliente.cus_nmcliente}}</td> 
+                        <td>{{cliente.cus_dsnombres}}</td> 
+                        <td>{{cliente.cus_dsapellidos}}</td> 
+                        <td>{{cliente.cus_dsdireccion}}</td> 
+                        <td>{{cliente.cus_dscorreo}}</td> 
+                        <td>{{cliente.cus_cdtelefono}}</td> 
+                        <td>{{cliente.cus_cdcelular}}</td> 
+                        <td>{{cliente.cus_dscargo}}</td> 
+                        <td>
+                            <button (click)="Editar(cliente)" class="btn btn-warning">Editar</button>
+                        </td> 
+                        <td>
+                            
+                            <button (click)="Eliminar(cliente)" class="btn btn-danger">Eliminar</button>
+                        </td>               
+                </tr> 
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
